@@ -12106,6 +12106,26 @@ ul li {
     font-size: 14px;
   }
 }
+footer {
+  display: grid;
+  place-items: center;
+  background-color: #DECBA4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  height: 120px;
+}
+footer p {
+  text-align: center;
+  color: #008080;
+  font-size: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: #008080;
+}
+footer a:hover {
+  color: white;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f9f4f4;

@@ -1,0 +1,24 @@
+$background-footer: #DECBA4;
+
+footer {
+  display: grid;
+  place-items: center;
+  background-color: $background-footer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  height: 120px;
+
+  p {
+    text-align: center;
+    color: #008080;
+    font-size: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #008080;
+
+    &:hover{
+      color: white;
+    }
+  }
+}
