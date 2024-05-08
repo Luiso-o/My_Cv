@@ -16,6 +16,21 @@ Este proyecto consiste en una plantilla para un Curriculum Vitae (CV) online. Ut
 - **JavaScript**
 - **Node.js**: Utilizado para gestionar librerías y scripts necesarios.
 
+## Instalación
+
+git clone [URL del repositorio]
+cd CV
+npm install
+
+## Agradecimientos
+
+GitHub Pages: Este proyecto está alojado utilizando GitHub Pages, permitiendo un fácil acceso y distribución.
+Flaticon: Íconos proporcionados por Flaticon.
+
+## Contribuciones
+
+Este es un proyecto de código abierto y todas las contribuciones son bienvenidas. Si tienes mejoras o correcciones, por favor, haz fork del repositorio, realiza tus cambios, y envía un pull request para su revisión.
+
 ## Estructura del Proyecto
 
 ```plaintext
@@ -32,19 +47,5 @@ CV/
 ├── package.json            # Manifiesto del proyecto Node.js
 ├── readme.md               # Documentación del proyecto
 ├── styles.css              # CSS compilado de SASS
-└── styles.css.map          # Mapa de fuente CSS para debugging
+└── styles.css.map          # Mapa de fuente CSS para debugging```
 
-## Instalación
-
-git clone [URL del repositorio]
-cd CV
-npm install
-
-## Agradecimientos
-
-GitHub Pages: Este proyecto está alojado utilizando GitHub Pages, permitiendo un fácil acceso y distribución.
-Flaticon: Íconos proporcionados por Flaticon.
-
-## Contribuciones
-
-Este es un proyecto de código abierto y todas las contribuciones son bienvenidas. Si tienes mejoras o correcciones, por favor, haz fork del repositorio, realiza tus cambios, y envía un pull request para su revisión.
