@@ -11995,13 +11995,55 @@ textarea.form-control-lg {
   font-weight: bold;
   margin: 0;
 }
-.text .download {
-  color: #008080;
-  text-decoration: none;
-  font-size: 1rem;
+
+.btn {
+  margin-top: 10px;
+  cursor: pointer;
+  position: relative;
+  background: #008080;
+  font-size: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
 }
-.text .download:hover {
-  color: white;
+.btn a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 1s;
+  position: relative;
+  z-index: 1;
+}
+.btn:after, .btn:before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-style: solid;
+  border-color: white;
+  transition: width 1s, height 1s;
+  z-index: 0;
+}
+.btn:after {
+  top: -1px;
+  left: -1px;
+  border-width: 3px 0 0 3px;
+}
+.btn:before {
+  bottom: -1px;
+  right: -1px;
+  border-width: 0 3px 3px 0;
+}
+.btn:hover {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.btn:hover a {
+  color: #008080;
+}
+.btn:hover:before, .btn:hover:after {
+  width: 100%;
+  height: 100%;
+  border-color: #008080;
 }
 
 @media (max-width: 768px) {
@@ -12019,6 +12061,10 @@ textarea.form-control-lg {
   }
   .text h3, .text .h3 {
     font-size: 1.2rem;
+  }
+  .btn {
+    font-size: 1rem;
+    margin-top: 0;
   }
 }
 .cv-container {
