@@ -12113,6 +12113,8 @@ ul li {
 }
 
 .link {
+  display: inline-block;
+  transition: font-size 0.3s ease;
   color: #008080;
   text-decoration: none;
 }
@@ -12121,6 +12123,21 @@ ul li {
   width: 20px;
   margin-top: 0;
   margin-right: 10px;
+}
+
+.link-text {
+  display: inline-block;
+  transition: font-weight 0.5s ease, letter-spacing 0.5s ease, color 0.5s ease, -webkit-text-decoration 0.5s ease;
+  transition: font-weight 0.5s ease, letter-spacing 0.5s ease, color 0.5s ease, text-decoration 0.5s ease;
+  transition: font-weight 0.5s ease, letter-spacing 0.5s ease, color 0.5s ease, text-decoration 0.5s ease, -webkit-text-decoration 0.5s ease; /* Transiciones suaves para múltiples propiedades */
+  color: #008080;
+}
+
+.link:hover .link-text {
+  text-decoration: underline;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: rgba(0, 128, 128, 0.8156862745);
 }
 
 @media (max-width: 480px) {
@@ -12165,11 +12182,16 @@ footer p {
   font-size: 20px;
 }
 footer a {
+  display: inline-block;
   text-decoration: none;
   color: #008080;
+  transition: transform 0.5s ease, -webkit-text-decoration 0.5s ease;
+  transition: transform 0.5s ease, text-decoration 0.5s ease;
+  transition: transform 0.5s ease, text-decoration 0.5s ease, -webkit-text-decoration 0.5s ease;
 }
 footer a:hover {
-  color: white;
+  text-decoration: underline;
+  transform: scale(1.1);
 }
 
 body {
