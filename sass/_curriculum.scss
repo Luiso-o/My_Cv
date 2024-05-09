@@ -25,16 +25,29 @@ $text-color: #008080;
   width: 65%;
 }
 
-.experience-link{
-  color: $text-color;
-  text-decoration: none;
-  font-size: 20px;
-}
-
 .title {
   font-size: 20px;
   font-weight: bold;
   color: $text-color;
+}
+
+.sub-title{
+  font-size: 20px;
+}
+
+.code-link{
+  text-decoration: none;
+  color: $text-color;
+
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.experience-link{
+  color: $text-color;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 ul{

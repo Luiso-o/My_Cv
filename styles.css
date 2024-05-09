@@ -12093,16 +12093,28 @@ textarea.form-control-lg {
   width: 65%;
 }
 
-.experience-link {
-  color: #008080;
-  text-decoration: none;
-  font-size: 20px;
-}
-
 .title {
   font-size: 20px;
   font-weight: bold;
   color: #008080;
+}
+
+.sub-title {
+  font-size: 20px;
+}
+
+.code-link {
+  text-decoration: none;
+  color: #008080;
+}
+.code-link:hover {
+  text-decoration: underline;
+}
+
+.experience-link {
+  color: #008080;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 ul {
