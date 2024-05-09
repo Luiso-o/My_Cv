@@ -45,6 +45,8 @@ ul{
 }
 
 .link {
+  display: inline-block;
+  transition: font-size 0.3s ease;
   color: $text-color;
   text-decoration: none;
 }
@@ -53,6 +55,19 @@ ul{
   width: 20px;
   margin-top: 0;
   margin-right: 10px;
+}
+
+.link-text{
+  display: inline-block;
+  transition: font-weight 0.5s ease, letter-spacing 0.5s ease, color 0.5s ease, text-decoration 0.5s ease; /* Transiciones suaves para múltiples propiedades */
+  color: $text-color; 
+}
+
+.link:hover .link-text{ 
+  text-decoration: underline; 
+  font-weight: bold; 
+  letter-spacing: 0.05em; 
+  color: #008080d0; 
 }
 
 @media (max-width: 480px) {
