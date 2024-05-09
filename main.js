@@ -5,7 +5,7 @@ document.querySelectorAll('.link').forEach(link => {
     link.addEventListener('mouseover', function() {
       switch (link.id) {
         case 'telefono':
-              link.querySelector('.link-text').textContent = 'Llámame ahora!';
+              link.querySelector('.link-text').textContent = 'Contacta conmigo!';
           break;
         case 'email':
           link.querySelector('.link-text').textContent = 'Envíame un correo!';
@@ -14,7 +14,7 @@ document.querySelectorAll('.link').forEach(link => {
           link.querySelector('.link-text').textContent = 'Échale un vistazo!';
           break;
         case 'linkedin':
-          link.querySelector('.link-text').textContent = 'Conéctate conmigo!';
+          link.querySelector('.link-text').textContent = 'Revisa mi trayectoria!';
           break;
         case 'portafolio':
           link.querySelector('.link-text').textContent = 'Mira mis proyectos!';
