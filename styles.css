@@ -12054,43 +12054,26 @@ textarea.form-control-lg {
     margin-top: 5px;
   }
   .text {
-    margin-top: 50px;
+    margin-top: 30px;
   }
   .text h1, .text .h1 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .text h3, .text .h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .btn {
     font-size: 1rem;
     margin-top: 0;
   }
 }
-.cv-container {
-  display: grid;
-  place-items: center;
-  padding: 20px;
+.curriculum {
+  margin: 20px;
   color: #008080;
 }
 
-.information,
 .experience {
-  background-color: white;
-  padding: 20px;
-  border-radius: 30px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  margin: 10px;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.information {
-  width: 35%;
-}
-
-.experience {
-  width: 65%;
+  border-left: 1px solid rgba(10, 157, 157, 0.568627451);
 }
 
 .title {
@@ -12152,33 +12135,26 @@ ul li {
   color: rgba(0, 128, 128, 0.8156862745);
 }
 
-@media (max-width: 480px) {
-  .cv-container {
-    padding: 0;
+@media (max-width: 780px) {
+  .curriculum {
+    margin: 10px;
   }
-  p {
-    font-size: 10px;
-  }
-  .information,
   .experience {
-    padding: 10px;
-    border-radius: 20px;
+    border-left: none;
   }
-  .title {
-    font-size: 12px;
-  }
-  .link {
-    font-size: 10px;
-  }
-  .link-img {
-    display: none;
-  }
-  ul li {
-    font-size: 12px;
-    margin: 0;
-  }
-  .experience-link {
+  .experience-link, .title, .sub-title, .link-text, p, ul {
     font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .curriculum {
+    margin: 10px;
+  }
+  .experience {
+    border-left: none;
+  }
+  .experience-link, .title, .sub-title, .link-text, p, ul {
+    font-size: 16px;
   }
 }
 footer {
@@ -12186,7 +12162,8 @@ footer {
   place-items: center;
   background-color: #DECBA4;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  height: 120px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 footer p {
   text-align: center;
@@ -12206,6 +12183,11 @@ footer a:hover {
   transform: scale(1.1);
 }
 
+@media (max-width: 768px) {
+  footer p {
+    font-size: 15px;
+  }
+}
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f9f4f4;

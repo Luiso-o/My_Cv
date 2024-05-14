@@ -6,7 +6,7 @@ footer {
   place-items: center;
   background-color: $background-footer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  height: 120px;
+  height: fit-content;
 
   p {
     text-align: center;
@@ -24,5 +24,12 @@ footer {
       text-decoration: underline;
       transform: scale(1.1); 
     }
+  }
+}
+
+@media (max-width: 768px) {
+
+  footer p {
+      font-size: 15px;
   }
 }

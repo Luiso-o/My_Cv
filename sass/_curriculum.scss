@@ -1,30 +1,13 @@
-$text-color: #008080;
-
-.cv-container {
-  display: grid;
-  place-items: center;
-  padding: 20px;
-  color: $text-color;
-}
-
-.information,
-.experience {
-  background-color: white;
-  padding: 20px;
-  border-radius: 30px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  margin: 10px;
-  height: fit-content;
-}
-
-.information{
-  width: 35%; 
+.curriculum{
+  margin: 20px;
+  color: #008080;
 }
 
 .experience{
-  width: 65%;
+  border-left: 1px solid #0a9d9d91; 
 }
 
+//------------------------------------------------------------------
 .title {
   font-size: 20px;
   font-weight: bold;
@@ -83,39 +66,29 @@ ul{
   color: #008080d0; 
 }
 
-@media (max-width: 480px) {
-  .cv-container {
-    padding: 0; 
-  }
+//------------------------------------------------------------------
+@media (max-width: 780px) {
+  .curriculum {margin: 10px;}
 
-  p{
-    font-size: 10px;
+  .experience{
+    border-left: none; 
   }
-
-  .information,
-  .experience {
-    padding: 10px;
-    border-radius: 20px;  
-  }
-
-  .title {
-    font-size: 12px; 
-  }
-
-  .link{
-    font-size: 10px;
-  }
-
-  .link-img {
-    display: none;
-  }
-
-  ul li {
-    font-size: 12px; 
-    margin: 0;
-  }
-
-  .experience-link{
+  
+  .experience-link, .title, .sub-title, .link-text, p, ul {
     font-size: 14px; 
   }
+
+}
+
+@media (max-width: 480px) {
+  .curriculum {margin: 10px;}
+
+  .experience{
+    border-left: none; 
+  }
+  
+  .experience-link, .title, .sub-title, .link-text, p, ul {
+    font-size: 16px; 
+  }
+
 }
